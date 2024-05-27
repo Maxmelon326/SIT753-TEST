@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lily">
+    <meta name="description" content="Javascript Demo">
+    <link rel="stylesheet" href="mystyle6.2.css">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+
+    <!-- You will need to create this new JS file and place it in
+    the same directory as this HTML file (i.e., public_html) -->
+    <script src="task7.1.js"></script>
+
+    <title>Working with STRING Objects</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Working with STRING Objects</h1>
+        </header>
+        <main>
+            <p>
+                Working with 'string' data in javascript is very important and common with any program that users interact with. In this task we explore using the 
+                inbuilt JavaScript <i>String</i> system object.
+            </p>
+            <h3><strong>Input Data</strong></h3>
+            <p>
+                Please complete the input fields in the following form:
+            </p>
+            <form>
+                <div class="mb-3 mt-3">
+                    <label for="Input string" class="form-label">Input string:</label>
+                    <input type="text" class="form-control" id="Inputstring" placeholder="Type the string here..."><br>
+                    <label for="Search" class="form-label">Sub-string to look for:</label>
+                    <input type="text" class="form-control" id="Search" placeholder="String to search for..." ><br>
+                    <label for="Position" class="form-label">The position #:</label>
+                    <input type="text" class="form-control" id="Position" placeholder="The position # in the string..."><br>
+                </div>
+            </form>
+
+            <!-- This is to display the table -->
+            <input class="btn btn-primary" type="button" onclick="processdata()"
+                value="Process the Input String"/>
+            <input class="btn btn-primary" type="reset" style="background-color: gray;color: white;border: none;" onclick="resetform()"
+                value="Reset form"/>
+
+            <hr>
+            
+            
+            <h3><strong>Processed Results</strong></h3>
+            <p>Using the inbuilt string object methods, we find:</p>
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-4" id="Display">
+                <p>Input STRING:</p>
+                <p>#characters in string:</p>
+                <p>String in uppercase:</p>
+                <p>String in lowercase:</p>
+                <p>Character at position:</p>
+                <p>Location of Sub-string:</p>
+                <p>Replace substring 'www':</p>
+                <p>Last'11'chars in string:</p>
+            </div>
+                <div class="col-sm-8" id="Result" style="background-color:lightgrey;">
+                    <p id="output1"></p>
+                    <p id="output2"></p>
+                    <p id="output3"></p>
+                    <p id="output4"></p>
+                    <p id="output5"></p>
+                    <p id="output6"></p>
+                    <p id="output7"></p>
+                    <p id="output8"></p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+          <!--show the table-->
+
+        </main>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
